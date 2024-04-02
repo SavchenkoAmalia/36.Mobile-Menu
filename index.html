@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Mobile-menu</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <h2 class="header__title">
+          <a href="/" class="header__logo">luxestate</a>
+        </h2>
+        <nav class="header__nav">
+          <input type="checkbox" id="toggle" class="header__input" />
+          <label for="toggle" class="header__label">
+            <span></span>
+          </label>
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="/" class="header__link">About</a>
+            </li>
+            <li class="header__item">
+              <a href="/" class="header__link">Appartments</a>
+            </li>
+            <li class="header__item">
+              <a href="/" class="header__link">How it works</a>
+            </li>
+            <li class="header__item">
+              <a href="/" class="header__link">Agents</a>
+            </li>
+            <li class="header__item">
+              <a href="/" class="header__link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__buttons">
+          <button class="header__button header__button-join">Join us</button>
+          <button class="header__button header__button-started">
+            Getting started
+          </button>
+        </div>
+      </div>
+    </header>
+    <!--! Header width JS -->
+    <header class="second-header">
+      <div class="second-header__container container">
+        <button class="second-header__menu menu-toggal js-open-menu">
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+        <ul class="second-header__list">
+          <li class="second-header__item">
+            <a href="/" class="second-header__link">Home</a>
+          </li>
+          <li class="second-header__item">
+            <a href="/" class="second-header__link">About</a>
+          </li>
+          <li class="second-header__item">
+            <a href="/" class="second-header__link">Contacts</a>
+          </li>
+          <li class="second-header__item">
+            <a href="/" class="second-header__link">Privacy</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="page home"></main>
+    <footer class="footer"></footer>
+
+    <!--! mobile munu width JS -->
+    <div id="mobile-menu"  class="mobile-menu js-menu-container">
+        <button class="second-header__menu menu-toggal js-close-menu">
+            <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            >
+            <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+            ></path>
+            </svg>
+          </button>
+
+        <ul class="mobile-menu__list">
+            <li class="mobile-menu__item">
+              <a href="/" class="mobile-menu__link">Home</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="/" class="mobile-menu__link">About</a>
+            </li>
+            <li class="item">
+              <a href="/" class="mobile-menu__link">Contacts</a>
+            </li>
+            <li class="item">
+              <a href="/" class="mobile-menu__link">Privacy</a>
+            </li>
+          </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+  </body>
+</html>
